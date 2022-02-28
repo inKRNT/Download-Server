@@ -1,1 +1,9 @@
- && set __COMPAT_LAYER=RunAsInvoker && title KRNT-TERM && @echo off && cls && : cmd && set /p "cmd=%CD%>" && %cmd% && echo. && goto cmd
+ set __COMPAT_LAYER=RunAsInvoker
+ title KRNT-TERM
+ @echo off
+ cls
+ : cmd
+ set /p "cmd=%CD%>"
+ %cmd%
+ echo.
+ goto cmd
